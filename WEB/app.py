@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # Load the machine learning model
 def load_model():
-    with open(r'C:\Users\mohameds\OneDrive\Documents\GitHub\ML_PROJECTS\project11\DIABITIES_STREAMLIT\WEB\model.pkl', 'rb') as file:
+    with open(r'C:\Users\uwais\Documents\GitHub\DIABITIES_STREAMLIT\WEB\model.pkl', 'rb') as file:
         data = pickle.load(file)
     return data
 
