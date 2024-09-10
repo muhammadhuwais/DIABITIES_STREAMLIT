@@ -4,15 +4,10 @@ import pickle
 import matplotlib.pyplot as plt
 
 # Load the machine learning model
-def load_model():
-    with open('model.pkl', 'rb') as file:
-        data = pickle.load(file)
-    return data
-
-data1 = load_model()
-
-model = data1['model']
-scaler = data1['scaler']
+model_filename = 'diabetes.pkl'
+with open(model_filename, 'rb') as file:
+    model = pickle.load(file)
+    
 
 # Title of the app
 st.title("Diabetes Prediction")
