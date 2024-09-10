@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # Load the machine learning model
 def load_model():
-    with open(r'C:\Users\uwais\Documents\GitHub\DIABITIES_STREAMLIT\WEB\model.pkl', 'rb') as file:
+    with open(r'C:\Users\uwais\Documents\GitHub\DIABITIES_STREAMLIT\model.pkl', 'rb') as file:
         data = pickle.load(file)
     return data
 
@@ -16,6 +16,7 @@ scaler = data1['scaler']
 
 # Title of the app
 st.title("Diabetes Prediction")
+
 # Input fields for user
 pregnancies = st.number_input('Pregnancies', min_value=0, max_value=20, step=1)
 glucose = st.number_input('Glucose', min_value=0, max_value=200)
